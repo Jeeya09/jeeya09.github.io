@@ -1,5 +1,6 @@
 const tiltFrame = document.getElementById("tilt-frame");
 const tiltArea = document.querySelector("[data-tilt-area]");
+const navLinks = document.querySelectorAll(".nav-link");
 const scrollStory = document.querySelector(".scroll-story");
 const scrollVisual = document.getElementById("scroll-visual");
 const scrollCopy = document.getElementById("scroll-copy");
@@ -14,6 +15,54 @@ const howWorkSteps = document.querySelectorAll(".how-work__step");
 const revealItems = document.querySelectorAll(".reveal-on-scroll");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const compactScreen = window.matchMedia("(max-width: 640px)");
+
+if (navLinks.length) {
+  const linkedSections = [...navLinks]
+    .map((link) => {
+      const href = link.getAttribute("href");
+      if (!href?.startsWith("#")) {
+        return null;
+      }
+
+      const section = document.querySelector(href);
+      if (!section) {
+        return null;
+      }
+
+      return { link, section };
+    })
+    .filter(Boolean);
+
+  const setActiveNavLink = (activeLink) => {
+    navLinks.forEach((link) => {
+      link.classList.toggle("is-active", link === activeLink);
+    });
+  };
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => setActiveNavLink(link));
+  });
+
+  const updateActiveNavOnScroll = () => {
+    const offset = window.innerHeight * 0.28;
+    let current = linkedSections[0];
+
+    linkedSections.forEach((item) => {
+      const rect = item.section.getBoundingClientRect();
+      if (rect.top - offset <= 0) {
+        current = item;
+      }
+    });
+
+    if (current) {
+      setActiveNavLink(current.link);
+    }
+  };
+
+  updateActiveNavOnScroll();
+  window.addEventListener("scroll", updateActiveNavOnScroll, { passive: true });
+  window.addEventListener("resize", updateActiveNavOnScroll);
+}
 
 if (tiltFrame && tiltArea) {
   const maxTilt = 25;
