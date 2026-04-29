@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio hero banner with a modern pill navigation and interactive tilt animation."
+    />
+    <title>Sjeeya Portfolio Hero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="cursor-aura" id="cursor-aura" aria-hidden="true">
+      <img
+        src="./assets/Cursor.png"
+        alt=""
+        class="cursor-aura__image"
+        width="560"
+        height="530"
+        loading="eager"
+      />
+    </div>
+
+    <header class="hero-shell">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link is-active" href="#home">Home</a>
+        <a class="nav-link" href="#projects">Work</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <main id="home" class="hero-section" data-tilt-area>
+        <div class="hero-visual reveal">
+          <div class="tilt-frame" id="tilt-frame">
+            <img
+              src="./assets/hero-banner.jpg"
+              alt="Stylized Sjeeya hero artwork"
+              class="hero-image"
+              width="866"
+              height="366"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </main>
+    </header>
+
+    <section class="intro-panel reveal" aria-labelledby="intro-title">
+      <div class="intro-card">
+        <div class="intro-content">
+          <h2 id="intro-title" class="intro-title">
+            I design<br />
+            meaningful<br />
+            digital experiences
+          </h2>
+          <p class="intro-text">
+            I design and build intuitive digital experiences that help startups
+            and brands grow and perform better.
+          </p>
+          <div class="intro-actions">
+            <a class="cta-button cta-primary" href="#contact">
+              <span>Let&apos;s Connect</span>
+              <span class="cta-icon" aria-hidden="true">&#8599;</span>
+            </a>
+            <a class="cta-button cta-secondary" href="#" download>
+              <span>Download CV</span>
+              <span class="cta-icon" aria-hidden="true">&#128196;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-story" aria-label="Process transition section">
+      <div class="scroll-story__sticky">
+        <div class="scroll-story__stage">
+          <div class="scroll-story__visual" id="scroll-visual">
+            <img
+              src="./assets/portfolio-scroll-stage.jpg"
+              alt="Portfolio case study collage surrounding a centered message"
+              class="scroll-story__image"
+              width="1174"
+              height="876"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="scroll-story__copy" id="scroll-copy">
+            <h2>
+              Designing clarity.<br />
+              Building experience.<br />
+              Delivering impact.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="work-showcase" aria-labelledby="work-showcase-title">
+      <div class="work-showcase__inner">
+        <div class="work-showcase__header">
+          <div class="work-showcase__intro">
+            <h2 id="work-showcase-title" class="work-showcase__title">Projects</h2>
+            <p class="work-showcase__description">
+              contemporary, user-friendly web designs and digital solutions
+              built to bring your vrand to life.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <a class="project-card__link" href="https://www.behance.net/gallery/248446171/The-Design-Hub-A-Centralized-Ecosystem-for-Designers" aria-label="View Waste Management project">
+              <div class="project-card__media">
+                <img
+                  src="./assets/Designhub.jpg"
+                  alt="The Design Hub project preview"
+                  class="project-card__image"
+                  width="1200"
+                  height="960"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="project-card__title">The Design Hub</h3>
+              <p class="project-card__meta">App Design</p>
+              </a>
+            </article>
+  
+          <article class="project-card">
+            <a class="project-card__link" href="https://www.behance.net/gallery/245891879/Bird-Valley-Food-Ordering-Mobile-App-UIUX-Case-Study" aria-label="View Food Ordering Delivery App project">
+              <div class="project-card__media">
+                <img
+                  src="./assets/Birdvalley.jpg"
+                  alt="Bird Valley project preview"
+                  class="project-card__image"
+                  width="1200"
+                  height="960"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="project-card__title">Bird Valley</h3>
+              <p class="project-card__meta">UI Design</p>
+              </a>
+            </article>
+  
+          <article class="project-card">
+            <a class="project-card__link" href="https://www.behance.net/gallery/248449999/Skinora-Budget-First-Skincare-Assistant" aria-label="View Waste Management project">
+              <div class="project-card__media">
+                <img
+                  src="./assets/Skinora.jpg"
+                  alt="Skinora project preview"
+                  class="project-card__image"
+                  width="1200"
+                  height="960"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="project-card__title">Skinora - Budget first skincare platform</h3>
+              <p class="project-card__meta">App Design</p>
+              </a>
+            </article>
+  
+          <article class="project-card">
+            <a class="project-card__link" href="#projects" aria-label="View Food Ordering Delivery App project">
+              <div class="project-card__media">
+                <img
+                  src="./assets/CosRent.jpg"
+                  alt="CosRent project preview"
+                  class="project-card__image"
+                  width="1200"
+                  height="960"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="project-card__title">CosRent - Making Cosplay Affordable and Confident</h3>
+              <p class="project-card__meta">Omnichannel Website Design</p>
+              </a>
+            </article>
+        </div>
+
+        <div class="work-showcase__footer">
+          <a class="work-showcase__cta" href="#projects">View More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-story" aria-labelledby="about-story-title">
+      <div class="about-story__sticky">
+        <div class="about-story__inner">
+          <div class="about-story__intro" id="about-intro">
+            <h2 id="about-story-title">
+              A <strong>creative UI/UX designer</strong> crafting UI, visual,
+              and interaction experiences by blending creativity with strategy
+              to create work that <em>captivates and inspires.</em>
+            </h2>
+          </div>
+
+          <div class="about-story__left" id="about-left">
+            <div class="about-story__portrait">
+              <img
+                src="./assets/IMG_4107.PNG"
+                alt="Portrait of Jeeya"
+                class="about-story__portrait-image"
+                width="784"
+                height="1360"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <aside class="about-story__side" id="about-side">
+            <div class="about-quote">
+              <div class="about-quote__mark" aria-hidden="true">&#10077;</div>
+              <p>
+                Hi, I&apos;m <strong>Jeeya.</strong> I design experiences that
+                just make sense. Blending creativity with user psychology, I
+                focus on building clean, functional, and impactful designs.
+              </p>
+            </div>
+
+            <div class="about-toolkit">
+              <div class="about-toolkit__rule" aria-hidden="true"></div>
+              <div class="about-toolkit__header">
+                <span class="tool-badge tool-badge--figma" aria-label="Figma">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <rect x="10" y="4" width="20" height="20" rx="10" fill="#F24E1E"></rect>
+                    <rect x="10" y="24" width="20" height="20" rx="10" fill="#A259FF"></rect>
+                    <rect x="10" y="44" width="20" height="16" rx="8" fill="#0ACF83"></rect>
+                    <rect x="30" y="4" width="20" height="20" rx="10" fill="#FF7262"></rect>
+                    <circle cx="40" cy="34" r="10" fill="#1ABCFE"></circle>
+                  </svg>
+                </span>
+                <h3>Toolkit</h3>
+                <span class="tool-badge tool-badge--ps" aria-label="Photoshop">Ps</span>
+              </div>
+              <p class="about-toolkit__text">
+                I use these tools every day to craft thoughtful, intuitive, and
+                visually engaging digital experiences. From wireframes to
+                animations, they help me bring ideas to life with care and
+                precision.
+              </p>
+              <div class="about-toolkit__footer">
+                <span class="tool-badge tool-badge--ai" aria-label="Illustrator">Ai</span>
+                <span class="tool-badge tool-badge--id" aria-label="InDesign">Id</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill-marquee" aria-label="Skills and services">
+      <div class="skill-marquee__track">
+        <div class="skill-marquee__group">
+          <span class="skill-marquee__item">UI/UX Design</span>
+          <span class="skill-marquee__item">Wireframing &amp; Prototyping</span>
+          <span class="skill-marquee__item">User Research</span>
+          <span class="skill-marquee__item">User Flow</span>
+          <span class="skill-marquee__item">Information Architecture</span>
+          <span class="skill-marquee__item">Responsive Design</span>
+          <span class="skill-marquee__item">Visual Design</span>
+          <span class="skill-marquee__item">Layout Design</span>
+        </div>
+        <div class="skill-marquee__group" aria-hidden="true">
+          <span class="skill-marquee__item">UI/UX Design</span>
+          <span class="skill-marquee__item">Wireframing &amp; Prototyping</span>
+          <span class="skill-marquee__item">User Research</span>
+          <span class="skill-marquee__item">User Flow</span>
+          <span class="skill-marquee__item">Information Architecture</span>
+          <span class="skill-marquee__item">Responsive Design</span>
+          <span class="skill-marquee__item">Visual Design</span>
+          <span class="skill-marquee__item">Layout Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-work" aria-labelledby="how-work-title">
+      <div class="how-work__inner">
+        <div class="how-work__intro reveal-on-scroll">
+          <h2 id="how-work-title">How I Work</h2>
+          <p>
+            I approach every project by aligning user needs with business
+            goals. From research and structure to design and refinement, my
+            process ensures solutions that are purposeful, scalable, and
+            effective.
+          </p>
+        </div>
+
+        <div class="how-work__content">
+          <div class="how-work__visual reveal-on-scroll">
+            <img
+              src="./assets/UI.png"
+              alt="Process illustration placeholder"
+              class="how-work__image"
+              id="how-work-image"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="how-work__steps reveal-on-scroll" role="tablist" aria-label="How I Work steps">
+            <button class="how-work__step" type="button" role="tab" aria-selected="false" data-image="./assets/research.PNG">Research &amp; Audit</button>
+            <button class="how-work__step" type="button" role="tab" aria-selected="false" data-image="./assets/UX.PNG">UX Architecture</button>
+            <button class="how-work__step is-active" type="button" role="tab" aria-selected="true" data-image="./assets/UI.PNG">UI System</button>
+            <button class="how-work__step" type="button" role="tab" aria-selected="false" data-image="./assets/dev.PNG">Development</button>
+            <button class="how-work__step" type="button" role="tab" aria-selected="false" data-image="./assets/Measure.PNG">Measure &amp; Optimize</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer id="contact" class="site-footer" aria-labelledby="footer-title">
+      <div class="site-footer__panel">
+        <h2 id="footer-title" class="site-footer__title">Let&apos;s Create Together</h2>
+        <p class="site-footer__text">
+          Have a project in mind, an idea brewing, or just want to say hi? My
+          inbox is always open.
+        </p>
+        <a class="site-footer__email" href="mailto:jeeyashrivastavastava49@gmail.com">jeeyashrivastavastava49@gmail.com</a>
+        <div class="site-footer__actions" aria-label="Social links">
+          <a class="footer-pill" href="#" aria-label="Behance">
+            <span class="footer-pill__icon">Be</span>
+            <span>Behance</span>
+          </a>
+          <a class="footer-pill" href="#" aria-label="LinkedIn">
+            <span class="footer-pill__icon">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a class="footer-pill" href="#" aria-label="Instagram">
+            <span class="footer-pill__icon footer-pill__icon--instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5"></rect>
+                <circle cx="12" cy="12" r="4.25"></circle>
+                <circle cx="17.5" cy="6.8" r="1.15" class="instagram-dot"></circle>
+              </svg>
+            </span>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+      <div class="site-footer__meta">
+        <p>&copy; 2026 Jeeya Shrivastava. All rights reserved.</p>
+        <p>Designed with &#9825; &amp; lots of Figma</p>
+        <p>Pune, India</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
